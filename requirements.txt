@@ -11,12 +11,12 @@
 setuptools
 
 # Needed by make release
-bump-my-version==1.4.1
+bump-my-version==1.5.1
 readme-renderer==45.0
-twine==6.2.0
+twine==7.0.0
 
 # Needed by make benchmarks-*
-pytest-benchmark==5.1.0
+pytest-benchmark==5.2.3
 
 pysimdjson==7.0.2
 orjson==3.10.18
