@@ -7,6 +7,9 @@
 
 -r requirements-test.txt
 
+# Needed on Python >= 3.12
+setuptools
+
 # Needed by make release
 bump-my-version==1.4.1
 readme-renderer==45.0
