@@ -225,7 +225,7 @@ class Encoder:
 
 @t.final
 class RawJSON:
-    value: RawJSON
+    value: str
     def __new__(cls, value: str) -> RawJSON: ...
 
 
