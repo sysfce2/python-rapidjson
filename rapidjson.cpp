@@ -2507,9 +2507,7 @@ dumps_internal(
                (!(iterableMode & IM_ONLY_LISTS) && PyList_Check(object))) {
         writer->StartArray();
 
-        Py_ssize_t size = PyList_GET_SIZE(object);
-
-        for (Py_ssize_t i = 0; i < size; i++) {
+        for (Py_ssize_t i = 0; i < PyList_GET_SIZE(object); i++) {
             if (Py_EnterRecursiveCall(" while JSONifying list object"))
                 return false;
             PyObject* item = PyList_GET_ITEM(object, i);
