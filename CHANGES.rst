@@ -12,6 +12,15 @@ Changes
 
   __ https://github.com/python-rapidjson/python-rapidjson/issues/232
 
+* Fix crash serializing a list that changes on the fly (`issue 238`__)
+
+  __ https://github.com/python-rapidjson/python-rapidjson/issues/238
+
+* Fix memory leak in ``RawJSON`` constructor with invalid argument (`PR #239`__), thanks
+  to Junhyung Lee
+
+  __ https://github.com/python-rapidjson/python-rapidjson/pull/239
+
 
 1.23 (2025-12-07)
 ~~~~~~~~~~~~~~~~~
