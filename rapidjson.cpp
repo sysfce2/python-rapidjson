@@ -465,7 +465,6 @@ RawJSON_dealloc(RawJSON* self)
 static PyObject*
 RawJSON_new(PyTypeObject* type, PyObject* args, PyObject* kwds)
 {
-    PyObject* self = type->tp_alloc(type, 0);
     static char const* kwlist[] = {
         "value",
         NULL
@@ -473,6 +472,10 @@ RawJSON_new(PyTypeObject* type, PyObject* args, PyObject* kwds)
     PyObject* value = NULL;
 
     if (!PyArg_ParseTupleAndKeywords(args, kwds, "U", (char**) kwlist, &value))
+        return NULL;
+
+    PyObject* self = type->tp_alloc(type, 0);
+    if (self == NULL)
         return NULL;
 
     ((RawJSON*) self)->value = value;
