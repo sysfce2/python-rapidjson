@@ -1,7 +1,7 @@
 Changes
 -------
 
-1.24 (unreleased)
+1.24 (2026-09-05)
 ~~~~~~~~~~~~~~~~~
 
 * Fix error handling after ``PyList_SetItem()`` calls (`issue 231`__)
