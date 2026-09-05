@@ -3,7 +3,7 @@
 # :Created:   dom 10 feb 2019 13:47:32 CET
 # :Author:    Lele Gaifax <lele@metapensiero.it>
 # :License:   MIT License
-# :Copyright: © 2019, 2025 Lele Gaifax
+# :Copyright: © 2019, 2025, 2026 Lele Gaifax
 #
 
 import io
@@ -12,6 +12,7 @@ import gc
 
 import pytest
 import rapidjson as rj
+
 
 tracemalloc = pytest.importorskip("tracemalloc")
 
